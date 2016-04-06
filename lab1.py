@@ -3,7 +3,5 @@ Python 2.7.9 (default, Mar  8 2015, 00:52:26)
 Type "copyright", "credits" or "license()" for more information.
 >>> from SimpleCV import Camera, Display, Image
 >>> import time
->>> sleep(10)
->>> foto = Camera().getImage()
->>> sleep(10)
->>> foto.save("myfirst.png")
+>>> sleep(20)
+>>> foto = Camera().getImage().save("myfirst.png")
