@@ -1,6 +1,6 @@
 print("Importando")
 from SimpleCV import Camera, Image, time
-print("usando Camera")
+print("Usando Camera")
 webcam=Camera()
 print("Usando getImage")
 time.sleep(5)
@@ -13,4 +13,10 @@ fotogris.save("Foto_Gris.jpg")
 print("Salvando Foto Binaria")
 fotobinaria=foto.binarize()
 fotobinaria.save("Foto_Binaria.jpg")
+print("Salvando Foto dividida en canales")
+(rojo,verde,azul)=foto.splitChannels()
+rojo.save("Foto_rojo.jpg")
+verde.save("Foto_verde.jpg")
+azul.save("Foto_azul.jpg")
+
 print("Listo!")
